@@ -10,5 +10,9 @@ class Battle < Sinatra::Base
     'Testing infrastructure working!'
   end
 
+  get '/fight' do
+    
+  end
+
   run! if app_file == $0
 end
