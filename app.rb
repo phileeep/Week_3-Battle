@@ -7,15 +7,15 @@ class Battle < Sinatra::Base
   end
 
   get '/' do 
+    "Testing infrastructure working!"
+    @p1_name = params[:p1_name]
+    @p2_name = params[:p2_name]
     erb :index
   end
 
-  get '/names' do
-    @name = params[:name]
-    erb :index
-  end
-
-  post '/play' do
+  post '/names' do
+    @p1_name = params[:p1_name]
+    @p2_name = params[:p2_name]
     erb :play
   end
 
