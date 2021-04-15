@@ -1,5 +1,5 @@
-require 'sinatra/base'
-require 'sinatra/reloader'
+require 'sinatra'
+require 'sinatra/reloader' if development?
 
 class Battle < Sinatra::Base
   configure :development do
@@ -7,10 +7,10 @@ class Battle < Sinatra::Base
   end
 
   get '/' do 
-    'Testing infrastructure working!'
+    erb :index
   end
 
-  get '/fight' do
+  get '/names' do
     
   end
 

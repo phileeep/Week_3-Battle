@@ -1,8 +1,10 @@
 source 'https://rubygems.org' 
-ruby '3.0.0'
+ruby '2.6.5'
 group :development, :test do
-
-gem 'sinatra', '~> 2.1'
-gem 'rspec', '~> 3.10'
-gem 'capybara', '~> 3.35', '>= 3.35.3'
+  gem 'sinatra'
+  gem 'rspec'
+  gem 'capybara'
+  gem 'rexml'
+  gem 'shotgun'
+  gem 'sinatra-reloader'
 end
