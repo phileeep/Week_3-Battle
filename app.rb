@@ -21,16 +21,16 @@ class Battle < Sinatra::Base
   get '/play' do
     @p1_name = session[:p1_name]
     @p2_name = session[:p2_name]
-    @p1_hp = "100HP"
-    @p2_hp = "100HP"
+    @p1_hp = 100
+    @p2_hp = 100
     erb :play
   end
 
   get '/attack' do 
     @p1_name = session[:p1_name]
     @p2_name = session[:p2_name]
-    @p1_hp = "100HP"
-    @p2_hp = "90 HP"
+    @p1_hp = 100
+    @p2_hp = 90
     erb :attack
   end
 
