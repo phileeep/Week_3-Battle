@@ -1,5 +1,4 @@
 require_relative '../../app.rb'
-require_relative './web_helpers.rb'
 
 feature 'Entering Names' do
   scenario 'User can enter names' do

@@ -1,7 +1,19 @@
 body {
   background-color: #f8a488;
   text-align: center;
+  color: #f8f5f1;
 }
+
+p {
+  margin-top: 2.5em;
+}
+
+/* .wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: red;
+} */
 
 li {
   list-style-type: none;
@@ -9,17 +21,17 @@ li {
 }
 
 h2 {
-  color: #f8f5f1;
+  margin-bottom: 1.5em;
 }
 
-.submit {
+.submit, .attack {
   background-color: #5aa897;
   border-radius: 25px;
   border: none;
   padding: 0.75em 1.35em;
 }
 
-.submit:hover {
+.submit:hover, .attack:hover {
   background-color: #f8f5f1;
   cursor: pointer;
 }
@@ -29,4 +41,8 @@ h2 {
   color: red;
   padding: 0.75em 1.35em;
   border-radius: 25px;
+}
+
+ .attack {
+  margin-top: 2.5em;
 }
