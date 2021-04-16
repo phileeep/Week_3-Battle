@@ -8,8 +8,8 @@
 
   <body>
     <div class="wrapper">
-      <h2><%=@p1_name%> vs. <%=@p2_name%>!</h2>
-      <span class="health"><%=@p1_name%> <%=@p1_hp%> HP</span> | <span class="health"><%=@p2_name%> <%=@p2_hp%> HP</span> 
+      <h2><%=@game.player1.name%> vs. <%=@game.player2.name%>!</h2>
+      <span class="health"><%=@game.player1.name%> <%=@game.player1.hp%> HP</span> | <span class="health"><%=@game.player2.name%> <%=@game.player2.hp%> HP</span> 
       <br>
        <form action="/attack" method="get">
          <input class="attack" value="Attack" type="submit">
